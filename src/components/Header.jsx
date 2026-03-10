@@ -10,7 +10,7 @@ export default function Header() {
       <Container>
         <div className="flex items-center justify-between py-4 border-b">
           <Image src={HeaderImage} alt="logo" className="h-10 w-auto" />
-          <div className="relative w-full md:w-[70%]">
+          <div className="relative w-[70%]">
             <input
               type="text"
               placeholder="Searching for anything..."
