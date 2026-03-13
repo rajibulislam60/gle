@@ -1,13 +1,11 @@
-import Header from "@/components/Header";
-import Navber from "./../components/Navber";
+import Bannar from "@/components/home/Bannar";
 
 export default function Home() {
   return (
     <div>
       <main>
         <div>
-          <Header />
-          <Navber />
+          <Bannar />
         </div>
       </main>
     </div>
