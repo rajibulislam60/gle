@@ -1,4 +1,5 @@
 import Bannar from "@/components/home/Bannar";
+import CoursesTitle from "@/components/home/CoursesTitle";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       <main>
         <div>
           <Bannar />
+          <CoursesTitle />
         </div>
       </main>
     </div>

@@ -30,7 +30,9 @@ export default function CoursesHome() {
                 />
                 <div className="p-3">
                   <h2 className="text-xl lg:text-2xl font-bold">{item.name}</h2>
-                  <p className="text-gray-700 mt-3">{item.description}</p>
+                  <p className="text-gray-700 mt-3 line-clamp-2">
+                    {item.description}
+                  </p>
                   <p className="text-[14px] lg:text-xl font-semibold mt-4 lg:mt-6">
                     {item.teacher}
                   </p>
