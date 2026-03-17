@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Container from "./../container/Container";
 import { User, Menu } from "@deemlol/next-icons";
+import Home from "@/app/page";
+import Link from "next/link";
 
 export default function Navber() {
   const [open, setOpen] = useState(false);
@@ -12,12 +14,17 @@ export default function Navber() {
         <div className="flex justify-between items-center py-3">
           <div>
             <ul className="hidden lg:flex gap-5 font-medium">
-              <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
-                Home
-              </li>
-              <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
-                Courses
-              </li>
+              <Link href="/">
+                <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
+                  Home
+                </li>
+              </Link>
+              <Link href="/courses">
+                <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
+                  Courses
+                </li>
+              </Link>
+
               <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
                 Competitions
               </li>
