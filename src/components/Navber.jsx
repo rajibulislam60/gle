@@ -24,10 +24,12 @@ export default function Navber() {
                   Courses
                 </li>
               </Link>
+              <Link href="/competitions">
+                <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
+                  Competitions
+                </li>
+              </Link>
 
-              <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
-                Competitions
-              </li>
               <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
                 Events
               </li>
@@ -57,15 +59,22 @@ export default function Navber() {
           {open && (
             <div className="lg:hidden w-full bg-gray-50 p-3 rounded-[8px] duration-[0.3s]">
               <ul className="font-medium">
-                <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
-                  Home
-                </li>
-                <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
-                  Courses
-                </li>
-                <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
-                  Competitions
-                </li>
+                <Link href="/">
+                  <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
+                    Home
+                  </li>
+                </Link>
+                <Link href="/courses">
+                  <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
+                    Courses
+                  </li>
+                </Link>
+                <Link href="/competitions">
+                  <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
+                    Competitions
+                  </li>
+                </Link>
+
                 <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
                   Events
                 </li>

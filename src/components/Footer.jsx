@@ -8,8 +8,12 @@ export default function Footer() {
     <div className="py-12 bg-[#fefefe]">
       <Container>
         <div className="lg:flex justify-between gap-10">
-          <div className="lg:w-[45%]">
-            <Image src={FooterLogo} alt="Footer Logo Image" />
+          <div className="w-full lg:w-[45%]">
+            <Image
+              className="w-full"
+              src={FooterLogo}
+              alt="Footer Logo Image"
+            />
             {/* <button className=" flex gap-1 lg:gap-2 items-center  text-gray-600 hover:text-blue-600 font-light lg:font-normal px-2 py-1 lg:px-4 lg:py-2 rounded-[8px] cursor-pointer duration-[0.3s] border border-gray-900">
               Contact Sale
             </button> */}
