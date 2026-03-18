@@ -25,7 +25,7 @@ export default function CoursesTitle() {
       <Container>
         <div>
           <div className="flex justify-between items-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-blue-600">
+            <h2 className="text-2xl lg:text-5xl font-bold leading-tight text-blue-600">
               Popular <span className="text-black">Courses</span>
             </h2>
             <div className="flex gap-2 items-center">
@@ -40,11 +40,11 @@ export default function CoursesTitle() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6 lg:mt-12 py-2 lg:py-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 mt-12 lg:mt-16">
             {popularCourses.map((item) => (
               <div className="bg-gray-200 rounded-[12px]" key={item.id}>
                 <Image
-                  className="w-full h-[150px] lg:h-[200px] object-cover"
+                  className="w-full h-[100px] lg:h-[200px] object-cover"
                   src={item.image}
                   alt={item.name}
                 />

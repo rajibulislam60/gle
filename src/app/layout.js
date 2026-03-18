@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import "./globals.css";
 import Navber from "@/components/Navber";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Gle",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Navber />
         {children}
+        <Footer />
       </body>
     </html>
   );

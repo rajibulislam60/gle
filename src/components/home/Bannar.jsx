@@ -42,7 +42,7 @@ export default function Banner() {
               <Image
                 src={BannarImage}
                 alt="Banner Hero Image"
-                className="w-full max-w-md lg:max-w-lg h-auto"
+                className="w-full lg:max-w-lg h-auto"
                 priority
               />
             </div>
