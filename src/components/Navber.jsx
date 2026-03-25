@@ -47,9 +47,11 @@ export default function Navber() {
               <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
                 Blog
               </li>
-              <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
-                Career
-              </li>
+              <Link href="/careers">
+                <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
+                  Career
+                </li>
+              </Link>
             </ul>
             <Menu
               onClick={() => setOpen(!open)}
@@ -98,9 +100,11 @@ export default function Navber() {
                 <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
                   Blog
                 </li>
-                <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
-                  Career
-                </li>
+                <Link href="/careers">
+                  <li className="text-gray-800 hover:text-gray-950 cursor-pointer">
+                    Career
+                  </li>
+                </Link>
               </ul>
             </div>
           )}
