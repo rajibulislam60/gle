@@ -4,9 +4,20 @@ import Container from "./../container/Container";
 import { User, Menu } from "@deemlol/next-icons";
 import Home from "@/app/page";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Navber() {
   const [open, setOpen] = useState(false);
+
+  const router = useRouter();
+
+  const handleNavigatelogin = () => {
+    router.push("/login");
+  };
+
+  const handleNavigateRegistration = () => {
+    router.push("/registration");
+  };
 
   return (
     <div>
@@ -47,10 +58,16 @@ export default function Navber() {
             />
           </div>
           <div className="flex gap-2 lg:gap-8 items-center">
-            <button className="bg-[#356df1] hover:bg-[#031030] text-[12px] lg:text-[16px] text-white font-light lg:font-normal px-3 lg:px-4 py-2 rounded-[8px] cursor-pointer uppercase duration-[0.3s]">
+            <button
+              onClick={handleNavigateRegistration}
+              className="bg-[#356df1] hover:bg-[#031030] text-[12px] lg:text-[16px] text-white font-light lg:font-normal px-3 lg:px-4 py-2 rounded-[8px] cursor-pointer uppercase duration-[0.3s]"
+            >
               get started
             </button>
-            <button className=" flex gap-1 lg:gap-2 items-center  text-gray-600 hover:text-blue-600 font-light lg:font-normal px-2 py-1 lg:px-4 lg:py-2 rounded-[8px] cursor-pointer duration-[0.3s]">
+            <button
+              onClick={handleNavigatelogin}
+              className=" flex gap-1 lg:gap-2 items-center  text-gray-600 hover:text-blue-600 font-light lg:font-normal px-2 py-1 lg:px-4 lg:py-2 rounded-[8px] cursor-pointer duration-[0.3s]"
+            >
               <User size={20} /> Log In
             </button>
           </div>

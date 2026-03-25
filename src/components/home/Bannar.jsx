@@ -3,8 +3,18 @@ import Container from "@/container/Container";
 import React from "react";
 import Image from "next/image";
 import BannarImage from "../../images/home-image.png";
+import { useRouter } from "next/navigation";
 
 export default function Banner() {
+  const router = useRouter();
+
+  const handleNavigateRegistration = () => {
+    router.push("/registration");
+  };
+
+  const handleNavigateCourses = () => {
+    router.push("/courses");
+  };
   return (
     <div className="py-12 lg:py-20">
       <Container>
@@ -28,11 +38,17 @@ export default function Banner() {
               </p>
 
               <div className="w-full flex flex-col sm:flex-row gap-4 mt-8">
-                <button className="w-full bg-[#356df1] hover:bg-[#031030] text-white text-sm lg:text-base px-5 py-3 rounded-lg duration-300">
+                <button
+                  onClick={handleNavigateRegistration}
+                  className="w-full bg-[#356df1] hover:bg-[#031030] text-white text-sm lg:text-base px-5 py-3 rounded-lg duration-300"
+                >
                   Create Your Account
                 </button>
 
-                <button className="w-full border border-[#031030] hover:bg-[#031030] hover:text-white text-sm lg:text-base px-5 py-3 rounded-lg duration-300">
+                <button
+                  onClick={handleNavigateCourses}
+                  className="w-full border border-[#031030] hover:bg-[#031030] hover:text-white text-sm lg:text-base px-5 py-3 rounded-lg duration-300"
+                >
                   View Courses
                 </button>
               </div>
