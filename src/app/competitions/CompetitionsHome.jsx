@@ -9,7 +9,7 @@ export default function CompetitionsHome() {
 
   useEffect(() => {
     Data().then((res) => {
-      setCompetitionProduct(res.coursesdata);
+      setCompetitionProduct(res.competitionsdata);
     });
   }, []);
   return (

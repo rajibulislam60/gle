@@ -17,7 +17,7 @@ export default function CompetitionsTitle() {
 
   useEffect(() => {
     Data().then((res) => {
-      setUpcomingCompetitions(res.coursesdata.slice(0, 4));
+      setUpcomingCompetitions(res.competitionsdata.slice(0, 4));
     });
   }, []);
   return (

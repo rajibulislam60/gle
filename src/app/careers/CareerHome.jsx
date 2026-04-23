@@ -9,7 +9,7 @@ export default function CareerHome() {
 
   useEffect(() => {
     Data().then((res) => {
-      setCareersData(res.coursesdata);
+      setCareersData(res.jobsdata);
     });
   }, []);
   return (
