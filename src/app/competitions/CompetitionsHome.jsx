@@ -3,6 +3,7 @@ import Container from "@/container/Container";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Data from "@/components/data/Data";
+import Link from "next/link";
 
 export default function CompetitionsHome() {
   const [competitionProduct, setCompetitionProduct] = useState([]);
@@ -21,7 +22,11 @@ export default function CompetitionsHome() {
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 my-8">
             {competitionProduct.map((item) => (
-              <div className="bg-gray-200 rounded-[12px]" key={item.id}>
+              <Link
+                href={`/competitions/${item.id}`}
+                className="bg-gray-200 rounded-[12px]"
+                key={item.id}
+              >
                 <Image
                   className="w-full h-[150px] lg:h-[200px] object-cover"
                   src={item.image}
@@ -36,7 +41,7 @@ export default function CompetitionsHome() {
                     Registration
                   </button>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
