@@ -5,6 +5,7 @@ import Container from "../../../container/Container";
 import { useParams } from "next/navigation";
 import Data from "@/components/data/Data";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SinglePage() {
   const { id } = useParams();
@@ -48,9 +49,11 @@ export default function SinglePage() {
 
           <p className="mt-4">{singleData.description}</p>
           {/* BUTTON */}
-          <button className="w-full mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg">
-            Register Now
-          </button>
+          <Link href="https://forms.gle/pPD6oG9fbSiPmVWY8" className="w-full">
+            <button className="w-full  cursor-pointer mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg">
+              Register Now
+            </button>
+          </Link>
 
           {/* WHY JOIN */}
           {singleData.whyJoin && (
