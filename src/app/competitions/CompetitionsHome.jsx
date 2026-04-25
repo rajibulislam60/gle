@@ -33,9 +33,11 @@ export default function CompetitionsHome() {
                   alt={item.name}
                 />
                 <div className="p-3">
-                  <h2 className="text-xl lg:text-2xl font-bold">{item.name}</h2>
+                  <h2 className="text-xl lg:text-2xl font-bold">
+                    {item.title}
+                  </h2>
                   <p className="text-gray-700 mt-3 line-clamp-2">
-                    {item.description}
+                    {item.tagline}
                   </p>
                   <button className="w-full bg-[#356df1] hover:bg-[#031030] text-white text-sm lg:text-base px-5 py-3 rounded-lg duration-300 mt-5">
                     Registration
