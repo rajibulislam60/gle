@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GLE ⚡
 
-## Getting Started
+GLE is a modern and responsive competition platform built with React.js and Tailwind CSS. The platform provides users with an engaging interface to explore competitions, events, and opportunities with a smooth and user-friendly experience.
 
-First, run the development server:
+🌐 **Live Demo:**  
+https://gle-z.netlify.app/
+
+---
+
+# ✨ Features
+
+- 🎯 Modern UI/UX Design
+- 📱 Fully Responsive Layout
+- ⚡ Fast and Smooth Performance
+- 🧩 Reusable React Components
+- 🎨 Tailwind CSS Styling
+- 🔥 Interactive Sections & Animations
+- 🚀 Optimized Frontend Performance
+- 🌙 Clean and Professional Design
+
+---
+
+# 🛠️ Tech Stack
+
+- ⚛️ React.js
+- 🎨 Tailwind CSS
+- 💨 Vite
+- 🔥 JavaScript (ES6+)
+- 🎯 React Icons
+
+---
+
+# 📂 Project Structure
+
+```bash
+gle/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+└── vite.config.js
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/rajibulislam60/gle.git
+```
+
+Go to the project directory:
+
+```bash
+cd gle
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# 📸 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add your project screenshots here.
 
-## Learn More
+```md
+![GLE Preview](your-image-link)
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🎯 Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- User Authentication
+- Competition Submission System
+- Admin Dashboard
+- Backend Integration
+- Notification System
+- Advanced Filtering & Search
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 👨‍💻 Developer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Md. Rajibul Islam Rajib
+
+---
+
+# ⭐ Support
+
+If you like this project, please give it a ⭐ on GitHub.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
